@@ -14,7 +14,7 @@ print("Welcome to Hazel's Quest for the perfect Ice Cream!!"
 player_name = input("Enter player name: ")
 
 #Prompt user to enter their favorite ice cream flavor
-favorite_flavor = input ("Enter favorite Ice Cream flavor:")
+favorite_flavor = input ("Enter favorite Ice Cream flavor: ")
 
 #Define bad_flavor
 
@@ -26,19 +26,19 @@ else:
 #Prompt user to enter info for q1
 print("You're in the mall and start craving an ice cream. Where do you go? The hallway? or outside?")
 
-q1 = float(input("Enter a number below 5 for the hallway, Enter a number above 5 for outside!"))
+q1 = float(input("Enter a number below 5 for the hallway, Enter a number above 5 for outside:  "))
 
 #Check q1 value
 if q1 < 5:
     print("You see 2 doors. What do you do?")
 
     # Ask for q2a input
-    q2a = int(input("Enter 1 to open door 1, Enter 2 to open door 2, Enter 3 to leave."))
+    q2a = int(input("Enter 1 to open door 1, Enter 2 to open door 2, Enter 3 to leave:  "))
 
    #Check q2a value
     if q2a == 1:
         print("You found an ice cream shop!! You can either ask the worker for ice cream politely or rudely, what do you do?")
-        q3 = str(input("Enter 'rude' to be rude, Enter 'polite' to be polite."))
+        q3 = str(input("Enter 'rude' to be rude, Enter 'polite' to be polite: "))
 
         #Check q3 value
         if q3 == "polite":
@@ -58,7 +58,7 @@ if q1 < 5:
 #Check q1 value
 elif q1 > 5:
     print("You walk outside! You can either go to an unmarked stall, or an alley way.")
-    q2b = str(input("Type 'Alley' to go to the alleyway or 'Stall' to go to the stall"))
+    q2b = str(input("Type 'Alley' to go to the alleyway or 'Stall' to go to the stall:  "))
 
 
 #Check q2b value
