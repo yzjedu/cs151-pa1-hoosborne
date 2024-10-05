@@ -47,7 +47,7 @@ if q1 < 5:
         elif q3 == "rude":
             print("You got Ice Cream! But because you were rude to the worker, they gave you", bad_flavor, "flavor instead! :( Try Again!!")
 
-#Check q2a value
+#Check q2a values
     elif q2a == 2:
         print("You found an ice cream shop!! You ordered", favorite_flavor,""
                              ", your favorite flavor but when you got it, you dropped it an slipped! :( Try Again!!")
