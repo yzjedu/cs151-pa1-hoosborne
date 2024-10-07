@@ -7,8 +7,7 @@
 # Data Out:  Win or Lose
 
 #Introduce Game to User
-print("Welcome to Hazel's Quest for the perfect Ice Cream!!"
-      " Make sure to match your answers to the prompt exactly!! Capitalization matters!")
+print("Welcome to Hazel's Quest for the perfect Ice Cream!!")
 
 #Prompt user to enter their name
 player_name = input("Enter player name: ")
@@ -16,9 +15,11 @@ player_name = input("Enter player name: ")
 #Prompt user to enter their favorite ice cream flavor
 favorite_flavor = input ("Enter favorite Ice Cream flavor: ")
 
-#Define bad_flavor
+#Case Correct favorite flavor
+favorite_flavor = favorite_flavor.lower()
 
-if favorite_flavor != "Pistachio":
+#Define bad_flavor
+if favorite_flavor != "pistachio":
     bad_flavor = "Pistachio"
 else:
     bad_flavor = "Butterscotch"
@@ -40,6 +41,12 @@ if q1 < 5:
         print("You found an ice cream shop!! You can either ask the worker for ice cream politely or rudely, what do you do?")
         q3 = str(input("Enter 'rude' to be rude, Enter 'polite' to be polite: "))
 
+        #Case correct q3 and check for valid input
+        q3 = q3.lower()
+        while q3 != "rude" and q3 != "polite":
+            q3 = str(input("Invalid Input. Type either 'Polite' or 'Rude'"))
+            q3 = q3.lower()
+
         #Check q3 value
         if q3 == "polite":
             print("Congrats!! You got", favorite_flavor,"Ice Cream!! Your favorite!!")
@@ -60,13 +67,18 @@ elif q1 > 5:
     print("You walk outside! You can either go to an unmarked stall, or an alley way.")
     q2b = str(input("Type 'Alley' to go to the alleyway or 'Stall' to go to the stall:  "))
 
+#Case correct q2b value to all lowercase and check for valid input
+    q2b = q2b.lower()
+    while q2b != "alley" and q2b != "stall":
+        q2b = str(input("Invalid Input. Type either 'Alley' or 'Stall'"))
+        q2b = q2b.lower()
 
 #Check q2b value
-    if q2b == "Alley":
+    if q2b == "alley":
         print("You went into the alley and got scared by a gang of cats!"
               " You were so shaken; you went home without ice cream. :( Try again!!")
 
-    elif q2b == "Stall":
+    elif q2b == "stall":
         print("You went to the unmarked stall, and it was an ice cream stall!! You politely ask the worker for your favorite flavor,"
               "", favorite_flavor, ", and they give it to you!! Yay!!")
 
